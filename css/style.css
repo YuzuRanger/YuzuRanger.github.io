@@ -1,0 +1,27 @@
+ #side-rect {
+     float: left;
+     width: 100px;
+     height: 100%;
+     shape-outside: inset(30px);
+     background: lightblue;
+ }
+body{
+	
+	background-image: url("../img/background.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+}
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+  border: 2px solid powderblue;
+  padding: 30px;
+  margin: 50px;
+}
