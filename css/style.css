@@ -61,6 +61,8 @@ line-height: 100px;
 
 .body-content { 
 	grid-area: 2 / 1 / 4 / 3;
+	max-width: 100%;
+	height: auto;
 }
 .body-content a
 {
