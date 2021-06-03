@@ -154,9 +154,9 @@ h2{
   	z-index: 3;
 }
 
-@media screen and (max-width: 800px) {
-  .body-content {
-    width: 80%;
+@media screen and (max-width: 1080px) {
+  .grid-container {
+    width: 100%;
     font-size: 50%;
 
   }
