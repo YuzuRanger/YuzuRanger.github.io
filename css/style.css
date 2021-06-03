@@ -95,6 +95,8 @@ body{
 	background-position: right top;
 	background-attachment: fixed;
 	background-color: #00283f;
+		    background-size: contain;
+	    background-position: left;
 
 }
 h1 {
