@@ -156,7 +156,7 @@ h2{
 
 
 /* mobile view*/
-@media screen and (max-width: 1360px){
+@media only screen and (max-width: 479px){
   .grid-container {
     width: 100%;
     font-size: 50%;
@@ -204,7 +204,7 @@ h2{
 
 body{
 	
-
+    background-size: cover;
 
 }
 h1 {
@@ -216,6 +216,14 @@ h2{
 
 .text-box1 {
 
+
+  font-size: 120%;
+  border: 5px solid #76c9f8;
+  background: #76c9f8;
+  padding: 10%;
+  margin-left: 10%;
+  margin-top: 10%;
+    margin-bottom: 10%;
 
 }
 .text-box2 {
