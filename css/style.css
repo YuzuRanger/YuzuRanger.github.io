@@ -9,7 +9,7 @@
 .side-rect { 
 	grid-area: 1 / 1 / 4 / 2; 
 
-	height: 100%;
+	height: 100vh;
 	width: 100px;
 	position: fixed;
 	top: 0; 
@@ -19,13 +19,48 @@
 	z-index: -1;
 }
 
+.scrolling-text
+{
+	
+	grid-area: 1 / 4 / 4 / 5;
+	opacity: 0.5;
+	height: 100vh;
+	width: 100px;
+	top: 0; 
+	right: 0;
+	position: fixed;
+	margin: 0;
+		z-index: 2;	
+
+
+}
+
+.scrolling-text p {
+	transform: rotate(-180deg);
+line-height: 100px;
+	 writing-mode: vertical-rl;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		font-size: 400%;
+}
+
+
+
 .decorative-space
 {
-	grid-area: 2 / 4 / 3 / 4;
+	grid-area: 1 / 3 / 4 / 5;
+	height: 100%;
+	z-index: 1;
+	opacity: 0.5;
+	  background-repeat: no-repeat;
+	    background-size: contain;
+	    background-position: center;
+
 }
 
 .body-content { 
-	grid-area: 2 / 1 / 3 / 3;
+	grid-area: 2 / 1 / 4 / 3;
 }
 .body-content a
 {
@@ -71,18 +106,46 @@ h2{
 	text-align: center;
 }
 
-.text-box {
+.text-box1 {
 
   font-size: 120%;
   border: 5px solid #76c9f8;
   background: #76c9f8;
   padding: 10px;
   margin-left: 100px;
-  margin-top: 200px;
+  margin-top: 150px;
+    margin-bottom: 200px;
   color: #0048a6;
   font-family: verdana;
   display: block;
+  	z-index: 1;
+}
+.text-box2 {
+	 text-align: center; 
+	 font-size: 9px;
+  border: 5px solid #76c9f8;
+  background: #76c9f8;
+  padding: 10px;
+
+  margin-left: 100px;
+    margin-right: 100px;
+  color: #0048a6;
+  font-family: verdana;
+  display: block;
+  	z-index: 1;
 }
 
+.dialogue-box {
+	 text-align: center; 
+	 font-size: 9px;
+  border: 5px solid #76c9f8;
 
+  padding: 10px;
 
+  margin-left: 100px;
+    margin-right: 100px;
+  color: #0048a6;
+  font-family: verdana;
+  display: block;
+  	z-index: 3;
+}
