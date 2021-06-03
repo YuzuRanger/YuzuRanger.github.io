@@ -184,7 +184,7 @@ h2{
 }
 .body-content a
 {
-
+  font-size: 200%;
 }
 
 
@@ -224,7 +224,7 @@ h2{
 }
 .text-box2 {
 
-	 font-size: xx-small;
+	 font-size: 1px;
   padding: 0%;
   margin-left: 10%;
     margin-right: 10%;
