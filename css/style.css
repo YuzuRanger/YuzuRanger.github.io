@@ -156,7 +156,7 @@ h2{
 
 
 /* mobile view*/
-@media only screen and (max-width: 479px){
+@media only screen and (min-device-width: 319px)and (max-width: 1370px){
   .grid-container {
     width: 100%;
     font-size: 50%;
