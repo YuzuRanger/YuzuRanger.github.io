@@ -154,10 +154,78 @@ h2{
   	z-index: 3;
 }
 
-@media screen and (max-width: 1080px) {
+
+/* mobile view*/
+@media screen and (max-width: 1360px){
   .grid-container {
     width: 100%;
     font-size: 50%;
 
   }
+
+.material-icons.md-36 { font-size: 24px; }
+
+.side-rect { 
+	width: 32px;
+}
+
+.scrolling-text
+{
+	width: 9%;
+}
+
+.decorative-space
+{
+	background-size: fill;
+}
+
+.body-content { 
+
+}
+.body-content a
+{
+
+}
+
+
+.body-content a:hover{
+
+}
+
+.body-content a:hover > i{
+
+}
+
+.body-content a > i{
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+
+body{
+	
+
+
+}
+h1 {
+  padding-left: 30px;
+}
+h2{
+
+}
+
+.text-box1 {
+
+
+}
+.text-box2 {
+
+}
+
+.dialogue-box {
+
+}
+
+
+
 }
