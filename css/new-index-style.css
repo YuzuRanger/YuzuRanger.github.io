@@ -1,0 +1,23 @@
+body
+{
+    
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-color: #00283f;
+    background-size: contain;
+    background-position: left;
+
+}
+h1
+{
+  color: #ffbe5f;
+  font-family: verdana;
+  font-size: 400%;
+  padding-left: 90px;
+}
+h2
+{
+    text-align: center;
+}
