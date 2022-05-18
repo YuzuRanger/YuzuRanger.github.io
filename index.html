@@ -9,7 +9,18 @@
 	</head>
 	<body>
 		
-		<style>#background-video {
+<style>
+:root {
+  --bkg: rgba(51, 51, 51, 1);
+  --vamp-red: rgba(255, 42, 0, 1);
+}
+
+
+body {
+  background-color: var(--bkg);
+}
+
+#background-video {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -19,6 +30,8 @@
   top: 0;
   bottom: 0;
   z-index: -1;
+  
+  filter:opacity(20%);
 }
 
 .page-wrapper {
@@ -26,26 +39,36 @@
   height: 100vh;
   margin: 0px;
   padding: 0px;
-  
+
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
-  color: white;
+  color: var(--vamp-red);
   text-align: center;
 }
 
 .content-box {
-  background: rgba(255, 0, 0, 0.4);
-  width: 40%;
+  width: 90%;
+  min-height: 50vh;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(5px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-			</style>
+</style>
 		
 		<video id="background-video" autoplay="" muted="" loop="" playsinline="">
-    <source src="https://static.cargo.site/assets/backdrop/video/DTLA_1950.mov" type="video/mp4">
+    <source src="https://yuzuranger.github.io/images/Video.m4v" type="video/mp4">
 </video>
 </video>
 
@@ -53,6 +76,8 @@ h1 {
   <div class="content-box">
   <h1>Returning Soon...</h1>
     </div>
+
+  
 </div>
 	</body>
 </html>
