@@ -3,81 +3,55 @@
 	<head>
 		<title>YuzuRanger on Github</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="main.css" />
+		<script src="animations.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet">
 	</head>
-	<body>
-		
-<style>
-:root {
-  --bkg: rgba(51, 51, 51, 1);
-  --vamp-red: rgba(255, 42, 0, 1);
-}
+<body onload="loadFunction()" style="margin:0;">
+  <div class="lds-heart" id="loader">
+    <div></div>
+  </div>
 
+  <div id="content" class="animate-bottom">
+    <div id="hero-back" class="animate-bottom"></div>
+    <div class="hero flex-centered">
+      <div class="text-box">
+        <h1>morgan chapleau-stein</h1>
+        <h2>developer</h2>
 
-body {
-  background-color: var(--bkg);
-}
+      </div>
+    </div>
+  </div>
 
-#background-video {
-  height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  
-  filter:opacity(20%);
-}
+  <div id="hidden" class="animate-bottom">
 
-.page-wrapper {
-  width: 100%;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
+    <div class="content-section">
+      <div class="content-wrapper flex-spaced">
+        <div class="third">
+          <img src="https://yuzuranger.github.io/images/statue.jpg" alt="visage of marble statue">
+        </div>
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+        <div class="paragraph">
+          <img src="https://yuzuranger.github.io/images/container-with-heart-bk.png" alt="computer dialogue box">
+          <div class="box-holder">
+            <h2>Welcome</h2>
+            <h3>More content is coming soon. For now, let's get in touch?</h3>
+            <a href="mailto:m.chapleaustein@gmail.com">
+              <i class="fa fa-envelope-o" id="email"></i></a>
+            <a href="https://www.linkedin.com/in/chapleaustein/">
+              <i class="fa fa-linkedin" id="linkedin"></i></a>
+            <a href="https://github.com/YuzuRanger">
+              <i class="fa fa-github github" id="github"></i></a>
+          </div>
+        </div>
 
-h1 {
-  color: var(--vamp-red);
-  text-align: center;
-}
-
-.content-box {
-  width: 90%;
-  min-height: 50vh;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.15);
-
-  backdrop-filter: blur(5px);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-</style>
-		
-		<video id="background-video" autoplay="" muted="" loop="" playsinline="">
-    <source src="https://yuzuranger.github.io/images/Video.m4v" type="video/mp4">
-</video>
-</video>
-
-<div class="page-wrapper">
-  <div class="content-box">
-  <h1>Returning Soon...</h1>
+      </div>
     </div>
 
-  
-</div>
-	</body>
+  </div>
+
+</body>
 </html>
