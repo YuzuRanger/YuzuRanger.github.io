@@ -191,11 +191,11 @@ h2 {
 
 .content-section {
   min-height: 30vh;
-  padding: 10vh 0;
+  padding-top: 10vh;
 }
 
 .third {
-  width: 30vw;
+  width: 30%;
 }
 
 .third img {
@@ -203,16 +203,26 @@ h2 {
 }
 
 .box-holder {
-  text-align: left;
-
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-holder h2 {
+  width: 100%;
+}
+
+.box-holder h3 {
+  width: 100%;
 }
 
 .paragraph {
-  flex-grow: 2;
+  width: 70%;
   position: relative;
 }
 
@@ -223,7 +233,7 @@ h2 {
 #email,
 #linkedin,
 #github {
-  font-size: 8em;
+  font-size: 7vw;
   background-color: var(--vamp-red);
   color: #fff;
   box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
@@ -232,7 +242,7 @@ h2 {
     inset 2px 2px 10px #00000080;
   border-radius: 29px;
   padding: 11px 19px;
-  margin: 0 40px;
+  margin: 0 1vw;
   animation: animate 3s linear infinite;
   text-shadow: 0 0 50px black, 0 0 100px var(--vamp-red),
     0 0 150px var(--vamp-red), 0 0 200px var(--vamp-red);
@@ -253,5 +263,64 @@ h2 {
 h3 {
   color: white;
   text-align: center;
-  margin-bottom: 15vh;
+}
+
+@media only screen and (max-width: 1278px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+
+  #email,
+  #linkedin,
+  #github {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 863px) {
+  .paragraph {
+    width: 100%;
+    order: 1;
+  }
+
+  .third {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #email,
+  #linkedin,
+  #github {
+    font-size: 2rem;
+  }
+
+  #dialogue-box {
+    display: none;
+  }
+
+  .paragraph {
+    position: initial;
+  }
+
+  #deco-img {
+    filter: opacity(40%);
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  .content-section {
+    padding: 0;
+  }
 }
